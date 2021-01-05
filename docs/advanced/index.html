@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Advanced Features | Insta Snapshots</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    >
+    <style>
+  :root {
+    /* Primary theme color */
+    --primary-color: #86bbd8;
+    /* Primary theme text color */
+    --primary-text-color: #2f4858;
+    /* Primary theme link color */
+    --primary-link-color: #336699;
+    /* Secondary color: the background body color */
+    --secondary-color: #d0e3ee;
+    --secondary-text-color: #303030;
+    /* Light background */
+    --light-color: #edf6fb;
+    /* Highlight text color of table of content */
+    --toc-highlight-text-color: #336699;
+    --toc-highlight-background-color: var(--light-color);
+  }
+</style>
+
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+      rel="stylesheet"> 
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https:&#x2F;&#x2F;insta.rs&#x2F;juice.css">
+    
+      
+      
+    
+    <meta property="title" content="Advanced Features">
+    <meta property="og:title" content="Advanced Features">
+    <meta property="og:site_name" content="Insta Snapshots">
+    <meta property="og:image" content="https:&#x2F;&#x2F;insta.rs&#x2F;logo.png" />
+    <meta name="twitter:site" content="@mitsuhiko">
+    <meta name="twitter:title" content="Advanced Features" />
+    <meta name="description" content="Advanced Features
+Insta provides some advanced features for more complex test setups.  Some of
+these…">
+    <meta name="og:description" content="Advanced Features
+Insta provides some advanced features for more complex test setups.  Some of
+these…">
+    <meta name="twitter:description" content="Advanced Features
+Insta provides some advanced features for more complex test setups.  Some of
+these…">
+    <meta name="twitter:card" content="summary">
+    
+  </head>
+
+  <body>
+    
+<header>
+   
+<a href="https:&#x2F;&#x2F;insta.rs&#x2F;">
+  <div class="logo">
+    <img src="https:&#x2F;&#x2F;insta.rs&#x2F;icon.png" alt="logo" />
+    Insta
+  </div>
+</a>
+
+<nav>
+  
+  <a class="nav-item subtitle-text" href="&#x2F;docs&#x2F;">Docs</a>
+  
+  <a class="nav-item subtitle-text" href="&#x2F;changelog&#x2F;">Changelog</a>
+  
+  <a class="nav-item subtitle-text" href="https:&#x2F;&#x2F;docs.rs&#x2F;insta">API</a>
+  
+  <a class="nav-item subtitle-text" href="https:&#x2F;&#x2F;github.com&#x2F;mitsuhiko&#x2F;insta">GitHub</a>
+  
+  <a class="nav-item subtitle-text" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;insta">Crate</a>
+  
+</nav>
+
+</header>
+
+
+    <main>
+      
+        
+          
+        
+        
+          
+        
+        
+          
+        
+        <label for="toc-toggle" class="toggle-toc"><span>Toggle Navigation</span></label>
+        <input type="checkbox" id="toc-toggle">
+        <div class="toc">
+          <div class="toc-sticky">
+            
+            
+              <div class="toc-item">
+                <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;">Overview</a>
+              </div>
+              
+              <div class="toc-item">
+                <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;quickstart&#x2F;">Getting Started</a>
+              </div>
+              
+              <div class="toc-item">
+                <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;snapshot-types&#x2F;">Snapshot Types</a>
+              </div>
+              
+              <div class="toc-item">
+                <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;serializers&#x2F;">Serializers</a>
+              </div>
+              
+              <div class="toc-item">
+                <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;snapshot-files&#x2F;">Snapshot Files</a>
+              </div>
+              
+              <div class="toc-item">
+                <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;redactions&#x2F;">Redactions</a>
+              </div>
+              
+              <div class="toc-item">
+                <a class="subtext current" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;advanced&#x2F;">Advanced Features</a>
+              </div>
+              
+              <div class="toc-item">
+                <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;settings&#x2F;">Settings</a>
+              </div>
+              
+              <div class="toc-item">
+                <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;cli&#x2F;">Cargo Insta</a>
+              </div>
+              
+              <div class="toc-item">
+                <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;vscode&#x2F;">VS Code Extension</a>
+              </div>
+              
+              
+            
+            
+              
+              <hr>
+              
+              
+                <div class="toc-item">
+                  <a class="current" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;advanced&#x2F;#advanced-features">Advanced Features</a>
+                </div>
+                
+                  
+                  <div class="toc-item">
+                    <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;advanced&#x2F;#redactions">Redactions</a>
+                  </div>
+                  
+                  
+                  <div class="toc-item">
+                    <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;advanced&#x2F;#globbing">Globbing</a>
+                  </div>
+                  
+                  
+                  <div class="toc-item">
+                    <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;advanced&#x2F;#test-output-control">Test Output Control</a>
+                  </div>
+                  
+                  
+                  <div class="toc-item">
+                    <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;advanced&#x2F;#disabling-assertion-failure">Disabling Assertion Failure</a>
+                  </div>
+                  
+                  
+                  <div class="toc-item">
+                    <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;advanced&#x2F;#controlling-snapshot-updating">Controlling Snapshot Updating</a>
+                  </div>
+                  
+                  
+                  <div class="toc-item">
+                    <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;advanced&#x2F;#deleting-unused-snapshots">Deleting Unused Snapshots</a>
+                  </div>
+                  
+                  
+                
+              
+            
+          </div>
+        </div>
+      
+
+      <div class="content text">
+        
+<h1 id="advanced-features">Advanced Features</h1>
+<p>Insta provides some advanced features for more complex test setups.  Some of
+these require the activation of a cargo feature.</p>
+<h2 id="redactions">Redactions</h2>
+<p>Redactions allow you to redact parts of the snapshot so that they are stable
+even in the presence of non deterministic data such as timestamps or random
+IDs.  See the <a href="../redactions/">redactions documentation</a> for more information.</p>
+<h2 id="globbing">Globbing</h2>
+<p>Sometimes it can be useful to run code against multiple input files.
+The easiest way to accomplish this is to use the <a href="https://docs.rs/insta/latest/insta/macro.glob.html"><code>glob!</code></a>
+macro which runs a closure for each input path that matches. Before the
+closure is executed the settings are updated to set a reference to the input
+file and the appropriate snapshot suffix. Globbing is an optional feature and
+can be enabled with the <code>glob</code> feature</p>
+<p>Example:</p>
+<pre style="background-color:#f5f5f5;">
+<code><span style="color:#72ab00;">use </span><span style="color:#1f1f1f;">std::fs;
+
+</span><span style="color:#a2a001;">glob!</span><span style="color:#1f1f1f;">(</span><span style="color:#d07711;">&quot;inputs/*.txt&quot;</span><span style="color:#1f1f1f;">, |</span><span style="color:#5597d6;">path</span><span style="color:#1f1f1f;">| {
+    </span><span style="color:#668f14;">let</span><span style="color:#1f1f1f;"> input </span><span style="color:#72ab00;">= </span><span style="color:#1f1f1f;">fs::read_to_string(path).</span><span style="color:#b39f04;">unwrap</span><span style="color:#1f1f1f;">();
+    </span><span style="color:#a2a001;">assert_json_snapshot!</span><span style="color:#1f1f1f;">(input.</span><span style="color:#b39f04;">to_uppercase</span><span style="color:#1f1f1f;">());
+});
+</span></code></pre>
+<p>The path to the glob macro is relative to the location of the test
+file.  It uses the <code>globset</code> crate for actual glob operations.</p>
+<h2 id="test-output-control">Test Output Control</h2>
+<p>Insta by default will output quite a lot of information as tests run.  For
+instance it will print out all the diffs.  This can be controlled by setting
+the <code>INSTA_OUTPUT</code> environment variable.  The following values are possible:</p>
+<ul>
+<li><code>diff</code> (default): prints the diffs</li>
+<li><code>summary</code>: prints only summaries (name of snapshot files etc.)</li>
+<li><code>minimal</code>: like <code>summary</code> but more minimal</li>
+<li><code>none</code>: insta will not output any extra information</li>
+</ul>
+<h2 id="disabling-assertion-failure">Disabling Assertion Failure</h2>
+<p>By default the tests will fail when the snapshot assertion fails.  However
+if a test produces more than one snapshot it can be useful to force a test
+to pass so that all new snapshots are created in one go.</p>
+<p>This can be enabled by setting <code>INSTA_FORCE_PASS</code> to <code>1</code>:</p>
+<pre style="background-color:#f5f5f5;">
+<code><span style="color:#1f1f1f;">INSTA_FORCE_PASS=1 cargo test --no-fail-fast
+</span></code></pre>
+<p>A better way to do this is to run <code>cargo insta test --review</code> which will
+run all tests with force pass and then bring up the review tool:</p>
+<pre style="background-color:#f5f5f5;">
+<code><span style="color:#1f1f1f;">cargo insta test --review
+</span></code></pre><h2 id="controlling-snapshot-updating">Controlling Snapshot Updating</h2>
+<p>During test runs snapshots will be updated according to the <code>INSTA_UPDATE</code>
+environment variable.  The default is <code>auto</code> which will write all new
+snapshots into <code>.snap.new</code> files if no CI is detected so that <code>cargo-insta</code>
+can pick them up.  Normally you don't have to change this variable.</p>
+<p><code>INSTA_UPDATE</code> modes:</p>
+<ul>
+<li><code>auto</code>: the default. <code>no</code> for CI environments or <code>new</code> otherwise</li>
+<li><code>always</code>: overwrites old snapshot files with new ones unasked</li>
+<li><code>unseen</code>: behaves like <code>always</code> for new snapshots and <code>new</code> for others</li>
+<li><code>new</code>: write new snapshots into <code>.snap.new</code> files</li>
+<li><code>no</code>: does not update snapshot files at all (just runs tests)</li>
+</ul>
+<p>When <code>new</code> or <code>auto</code> is used as mode the <code>cargo-insta</code> command can be used
+to review the snapshots conveniently.</p>
+<h2 id="deleting-unused-snapshots">Deleting Unused Snapshots</h2>
+<p>Insta only has limited support for detecting unused snapshot files.  The
+reason for this is that insta does not control the execution of all tests
+so it cannot spot which files are actually unreferenced.</p>
+<p>There are two solutions for this problem.  One is to use <code>cargo-insta</code>'s
+<code>test</code> command which accepts a <code>--delete-unreferenced-snapshots</code> flag:</p>
+<pre style="background-color:#f5f5f5;">
+<code><span style="color:#1f1f1f;">cargo insta test --delete-unreferenced-snapshots
+</span></code></pre>
+<p>The second option is to use the <code>INSTA_SNAPSHOT_REFERENCES_FILE</code> environment
+variable to instruct insta to append all referenced files into a list.  This
+can then be used to delete all files not referenced.  For instance one could
+use <a href="https://github.com/BurntSushi/ripgrep">ripgrep</a> like this:</p>
+<pre style="background-color:#f5f5f5;">
+<code><span style="color:#668f14;">export </span><span style="color:#5597d6;">INSTA_SNAPSHOT_REFERENCES_FILE</span><span style="color:#72ab00;">=</span><span style="color:#d07711;">&quot;$(</span><span style="color:#acb3c2;">mktemp</span><span style="color:#d07711;">)&quot;
+</span><span style="color:#5597d6;">cargo</span><span style="color:#1f1f1f;"> test
+</span><span style="color:#5597d6;">rg --files -lg </span><span style="color:#d07711;">&#39;*.snap&#39; &quot;$(</span><span style="color:#acb3c2;">pwd</span><span style="color:#d07711;">)&quot; </span><span style="color:#72ab00;">| </span><span style="color:#5597d6;">grep -vFf </span><span style="color:#d07711;">&quot;$</span><span style="color:#acb3c2;">INSTA_SNAPSHOT_REFERENCES_FILE</span><span style="color:#d07711;">&quot; </span><span style="color:#72ab00;">| </span><span style="color:#5597d6;">xargs</span><span style="color:#1f1f1f;"> rm
+</span><span style="color:#5597d6;">rm -f </span><span style="color:#1f1f1f;">$</span><span style="color:#5597d6;">INSTA_SNAPSHOT_REFERENCES_FILE
+</span></code></pre>
+
+
+  <div class="next-page">
+    <a href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;settings&#x2F;">Continue with Settings &raquo;</a>
+  </div>
+
+
+
+        
+          
+        
+
+        
+          <div class="source-hint">
+            Found an issue?
+            You can
+            <a href="https://github.com/mitsuhiko&#x2F;insta-website/edit/main/content/docs&#x2F;advanced.md">edit this page</a>
+            on GitHub.
+          </div>
+        
+      </div>
+    </main>
+
+    
+<footer>
+  <span>
+    Created by <a href="https://lucumr.pocoo.org/">Armin Ronacher</a>
+  </span>
+  <span><a href="https://github.com/mitsuhiko/insta">Github</a></span>
+  <span><a href="https://github.com/mitsuhiko/insta/issues">Issues</a></span>
+  <span><a href="https://docs.rs/insta">API Documentation</a></span>
+  <span><a href="https://crates.io/crates/io">Crate</a></span>
+</footer>
+
+    <script>
+      function highlightNav(heading) {
+        let pathname = location.pathname;
+        document.querySelectorAll(".toc a").forEach((item) => {
+          item.classList.remove("active");
+        });
+        document
+          .querySelector(".toc a[href$='" + pathname + "#" + heading + "']")
+          .classList.add("active");
+      }
+
+      let currentHeading = "";
+      window.onscroll = function () {
+        let h = document.querySelectorAll("h1,h2,h3,h4,h5,h6");
+        let elementArr = [];
+
+        h.forEach((item) => {
+          if (item.id !== "") {
+            elementArr[item.id] = item.getBoundingClientRect().top;
+          }
+        });
+        elementArr.sort();
+        for (let key in elementArr) {
+          if (!elementArr.hasOwnProperty(key)) {
+            continue;
+          }
+          if (elementArr[key] > 0 && elementArr[key] < 300) {
+            if (currentHeading !== key) {
+              highlightNav(key);
+              currentHeading = key;
+            }
+            break;
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

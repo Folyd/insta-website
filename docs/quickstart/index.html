@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Getting Started | Insta Snapshots</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    >
+    <style>
+  :root {
+    /* Primary theme color */
+    --primary-color: #86bbd8;
+    /* Primary theme text color */
+    --primary-text-color: #2f4858;
+    /* Primary theme link color */
+    --primary-link-color: #336699;
+    /* Secondary color: the background body color */
+    --secondary-color: #d0e3ee;
+    --secondary-text-color: #303030;
+    /* Light background */
+    --light-color: #edf6fb;
+    /* Highlight text color of table of content */
+    --toc-highlight-text-color: #336699;
+    --toc-highlight-background-color: var(--light-color);
+  }
+</style>
+
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+      rel="stylesheet"> 
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https:&#x2F;&#x2F;insta.rs&#x2F;juice.css">
+    
+      
+      
+    
+    <meta property="title" content="Getting Started">
+    <meta property="og:title" content="Getting Started">
+    <meta property="og:site_name" content="Insta Snapshots">
+    <meta property="og:image" content="https:&#x2F;&#x2F;insta.rs&#x2F;logo.png" />
+    <meta name="twitter:site" content="@mitsuhiko">
+    <meta name="twitter:title" content="Getting Started" />
+    <meta name="description" content="Getting Started
+So you want to get started with snapshot testing?  Here is the 5 minute
+introduction…">
+    <meta name="og:description" content="Getting Started
+So you want to get started with snapshot testing?  Here is the 5 minute
+introduction…">
+    <meta name="twitter:description" content="Getting Started
+So you want to get started with snapshot testing?  Here is the 5 minute
+introduction…">
+    <meta name="twitter:card" content="summary">
+    
+  </head>
+
+  <body>
+    
+<header>
+   
+<a href="https:&#x2F;&#x2F;insta.rs&#x2F;">
+  <div class="logo">
+    <img src="https:&#x2F;&#x2F;insta.rs&#x2F;icon.png" alt="logo" />
+    Insta
+  </div>
+</a>
+
+<nav>
+  
+  <a class="nav-item subtitle-text" href="&#x2F;docs&#x2F;">Docs</a>
+  
+  <a class="nav-item subtitle-text" href="&#x2F;changelog&#x2F;">Changelog</a>
+  
+  <a class="nav-item subtitle-text" href="https:&#x2F;&#x2F;docs.rs&#x2F;insta">API</a>
+  
+  <a class="nav-item subtitle-text" href="https:&#x2F;&#x2F;github.com&#x2F;mitsuhiko&#x2F;insta">GitHub</a>
+  
+  <a class="nav-item subtitle-text" href="https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;insta">Crate</a>
+  
+</nav>
+
+</header>
+
+
+    <main>
+      
+        
+          
+        
+        
+          
+        
+        
+          
+        
+        <label for="toc-toggle" class="toggle-toc"><span>Toggle Navigation</span></label>
+        <input type="checkbox" id="toc-toggle">
+        <div class="toc">
+          <div class="toc-sticky">
+            
+            
+              <div class="toc-item">
+                <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;">Overview</a>
+              </div>
+              
+              <div class="toc-item">
+                <a class="subtext current" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;quickstart&#x2F;">Getting Started</a>
+              </div>
+              
+              <div class="toc-item">
+                <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;snapshot-types&#x2F;">Snapshot Types</a>
+              </div>
+              
+              <div class="toc-item">
+                <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;serializers&#x2F;">Serializers</a>
+              </div>
+              
+              <div class="toc-item">
+                <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;snapshot-files&#x2F;">Snapshot Files</a>
+              </div>
+              
+              <div class="toc-item">
+                <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;redactions&#x2F;">Redactions</a>
+              </div>
+              
+              <div class="toc-item">
+                <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;advanced&#x2F;">Advanced Features</a>
+              </div>
+              
+              <div class="toc-item">
+                <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;settings&#x2F;">Settings</a>
+              </div>
+              
+              <div class="toc-item">
+                <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;cli&#x2F;">Cargo Insta</a>
+              </div>
+              
+              <div class="toc-item">
+                <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;vscode&#x2F;">VS Code Extension</a>
+              </div>
+              
+              
+            
+            
+              
+              <hr>
+              
+              
+                <div class="toc-item">
+                  <a class="current" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;quickstart&#x2F;#getting-started">Getting Started</a>
+                </div>
+                
+                  
+                  <div class="toc-item">
+                    <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;quickstart&#x2F;#installation">Installation</a>
+                  </div>
+                  
+                  
+                  <div class="toc-item">
+                    <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;quickstart&#x2F;#writing-tests">Writing Tests</a>
+                  </div>
+                  
+                  
+                  <div class="toc-item">
+                    <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;quickstart&#x2F;#reviewing-snapshots">Reviewing Snapshots</a>
+                  </div>
+                  
+                  
+                  <div class="toc-item">
+                    <a class="subtext" href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;quickstart&#x2F;#inline-snapshots">Inline Snapshots</a>
+                  </div>
+                  
+                  
+                
+              
+            
+          </div>
+        </div>
+      
+
+      <div class="content text">
+        
+<h1 id="getting-started">Getting Started</h1>
+<p>So you want to get started with snapshot testing?  Here is the 5 minute
+introduction to how to be successful with insta.</p>
+<h2 id="installation">Installation</h2>
+<p>The recommended way is to add the dependency with <code>cargo-edit</code> if you have it:</p>
+<pre style="background-color:#f5f5f5;">
+<code><span style="color:#1f1f1f;">cargo add --dev insta
+</span></code></pre>
+<p>Alternatively edit your <code>Cargo.toml</code> manually and add <code>insta</code> as manual
+dependency:</p>
+<pre style="background-color:#f5f5f5;">
+<code><span style="color:#1f1f1f;">[</span><span style="color:#6486ab;">dev-dependencies</span><span style="color:#1f1f1f;">]
+</span><span style="color:#7f902a;">insta </span><span style="color:#1f1f1f;">= </span><span style="color:#d07711;">&quot;1.5.2&quot;
+</span></code></pre>
+<p>And for an improved review experience it's recommended to install the
+<code>cargo-insta</code> tool:</p>
+<pre style="background-color:#f5f5f5;">
+<code><span style="color:#1f1f1f;">cargo install cargo-insta
+</span></code></pre><h2 id="writing-tests">Writing Tests</h2>
+<p>Insta snapshots reference values which are fundamentally strings.  However the
+method by which these strings are generated can be split in three different
+ways:</p>
+<ul>
+<li>You can stringify a reference value yourself and assert on it with
+<a href="https://docs.rs/insta/latest/insta/macro.assert_snapshot.html"><code>assert_snapshot!</code></a>.</li>
+<li>You can have insta serialize a <code>serde::Serialize</code>able value into a string by
+using one of the following macros: <a href="https://docs.rs/insta/latest/insta/macro.assert_json_snapshot.html"><code>assert_json_snapshot!</code></a>,
+<a href="https://docs.rs/insta/latest/insta/macro.assert_yaml_snapshot.html"><code>assert_yaml_snapshot!</code></a>,
+<a href="https://docs.rs/insta/latest/insta/macro.assert_toml_snapshot.html"><code>assert_toml_snapshot!</code></a>,
+<a href="https://docs.rs/insta/latest/insta/macro.assert_ron_snapshot.html"><code>assert_ron_snapshot!</code></a>, or
+<a href="https://docs.rs/insta/latest/insta/macro.assert_csv_snapshot.html"><code>assert_csv_snapshot!</code></a>.</li>
+<li>You can instruct insta to use the <code>Debug</code> representation of a value by using
+<a href="https://docs.rs/insta/latest/insta/macro.assert_debug_snapshot.html"><code>assert_debug_snapshot!</code></a>.</li>
+</ul>
+<p>For most real world applications the recommendation is to use YAML snapshots
+of serializable values.  This is because they look best under version control
+and the diff viewer and support <a href="../redactions/">redactions</a>.</p>
+<p>The following example demonstrates a very simple test case:</p>
+<pre style="background-color:#f5f5f5;">
+<code><span style="color:#668f14;">fn </span><span style="color:#c23f31;">split_words</span><span style="color:#1f1f1f;">(</span><span style="color:#5597d6;">s</span><span style="color:#1f1f1f;">: </span><span style="color:#72ab00;">&amp;</span><span style="color:#668f14;">str</span><span style="color:#1f1f1f;">) -&gt; </span><span style="color:#a2a001;">Vec</span><span style="color:#1f1f1f;">&lt;</span><span style="color:#72ab00;">&amp;</span><span style="color:#668f14;">str</span><span style="color:#1f1f1f;">&gt; {
+    s.</span><span style="color:#b39f04;">split_whitespace</span><span style="color:#1f1f1f;">().</span><span style="color:#b39f04;">collect</span><span style="color:#1f1f1f;">()
+}
+
+#[</span><span style="color:#5597d6;">test</span><span style="color:#1f1f1f;">]
+</span><span style="color:#668f14;">fn </span><span style="color:#c23f31;">test_split_words</span><span style="color:#1f1f1f;">() {
+    </span><span style="color:#668f14;">let</span><span style="color:#1f1f1f;"> words </span><span style="color:#72ab00;">= </span><span style="color:#b39f04;">split_words</span><span style="color:#1f1f1f;">(</span><span style="color:#d07711;">&quot;hello from the other side&quot;</span><span style="color:#1f1f1f;">);
+    insta::assert_yaml_snapshot</span><span style="color:#72ab00;">!</span><span style="color:#1f1f1f;">(words);
+}
+</span></code></pre><h2 id="reviewing-snapshots">Reviewing Snapshots</h2>
+<p>The recommended flow is to run the tests once, have them fail and check if the
+result is okay.  By default the new snapshots are stored next to the old ones
+with the extra <code>.new</code> extension.  Once you are satisifed move the new files
+over.  To simplify this workflow you can use cargo insta review which will let
+you interactively review them:</p>
+<pre style="background-color:#f5f5f5;">
+<code><span style="color:#5597d6;">cargo</span><span style="color:#1f1f1f;"> insta review
+</span></code></pre>
+<p>For more information see <a href="../cli/">cargo-insta</a> documentation.</p>
+<h2 id="inline-snapshots">Inline Snapshots</h2>
+<p>Snapshots can also be stored inline.  In that case the format
+for the snapshot macros is <code>assert_snapshot!(reference_value, @&quot;snapshot&quot;)</code>.
+The leading at sign (<code>@</code>) indicates that the following string is the
+reference value.  <code>cargo-insta</code> will then update that string with the new
+value on review.</p>
+<p>This is the example above with inline snapshots:</p>
+<pre style="background-color:#f5f5f5;">
+<code><span style="color:#668f14;">fn </span><span style="color:#c23f31;">split_words</span><span style="color:#1f1f1f;">(</span><span style="color:#5597d6;">s</span><span style="color:#1f1f1f;">: </span><span style="color:#72ab00;">&amp;</span><span style="color:#668f14;">str</span><span style="color:#1f1f1f;">) -&gt; </span><span style="color:#a2a001;">Vec</span><span style="color:#1f1f1f;">&lt;</span><span style="color:#72ab00;">&amp;</span><span style="color:#668f14;">str</span><span style="color:#1f1f1f;">&gt; {
+    s.</span><span style="color:#b39f04;">split_whitespace</span><span style="color:#1f1f1f;">().</span><span style="color:#b39f04;">collect</span><span style="color:#1f1f1f;">()
+}
+
+#[</span><span style="color:#5597d6;">test</span><span style="color:#1f1f1f;">]
+</span><span style="color:#668f14;">fn </span><span style="color:#c23f31;">test_split_words</span><span style="color:#1f1f1f;">() {
+    </span><span style="color:#668f14;">let</span><span style="color:#1f1f1f;"> words </span><span style="color:#72ab00;">= </span><span style="color:#b39f04;">split_words</span><span style="color:#1f1f1f;">(</span><span style="color:#d07711;">&quot;hello from the other side&quot;</span><span style="color:#1f1f1f;">);
+    insta::assert_yaml_snapshot</span><span style="color:#72ab00;">!</span><span style="color:#1f1f1f;">(words, </span><span style="color:#72ab00;">@</span><span style="color:#d07711;">&quot;&quot;</span><span style="color:#1f1f1f;">);
+}
+</span></code></pre>
+<p>After the initial test failure you can run <code>cargo insta review</code> to
+accept the change.  The file will then be updated automatically and the
+reference value will be placed in the macro invocation like this:</p>
+<pre style="background-color:#f5f5f5;">
+<code><span style="color:#668f14;">fn </span><span style="color:#c23f31;">split_words</span><span style="color:#1f1f1f;">(</span><span style="color:#5597d6;">s</span><span style="color:#1f1f1f;">: </span><span style="color:#72ab00;">&amp;</span><span style="color:#668f14;">str</span><span style="color:#1f1f1f;">) -&gt; </span><span style="color:#a2a001;">Vec</span><span style="color:#1f1f1f;">&lt;</span><span style="color:#72ab00;">&amp;</span><span style="color:#668f14;">str</span><span style="color:#1f1f1f;">&gt; {
+    s.</span><span style="color:#b39f04;">split_whitespace</span><span style="color:#1f1f1f;">().</span><span style="color:#b39f04;">collect</span><span style="color:#1f1f1f;">()
+}
+
+#[</span><span style="color:#5597d6;">test</span><span style="color:#1f1f1f;">]
+</span><span style="color:#668f14;">fn </span><span style="color:#c23f31;">test_split_words</span><span style="color:#1f1f1f;">() {
+    </span><span style="color:#668f14;">let</span><span style="color:#1f1f1f;"> words </span><span style="color:#72ab00;">= </span><span style="color:#b39f04;">split_words</span><span style="color:#1f1f1f;">(</span><span style="color:#d07711;">&quot;hello from the other side&quot;</span><span style="color:#1f1f1f;">);
+    insta::assert_yaml_snapshot</span><span style="color:#72ab00;">!</span><span style="color:#1f1f1f;">(words, </span><span style="color:#72ab00;">@</span><span style="color:#668f14;">r</span><span style="color:#d07711;">###&quot;
+    ---
+    - hello
+    - from
+    - the
+    - other
+    - side
+    &quot;###</span><span style="color:#1f1f1f;">);
+}
+</span></code></pre>
+
+
+  <div class="next-page">
+    <a href="https:&#x2F;&#x2F;insta.rs&#x2F;docs&#x2F;snapshot-types&#x2F;">Continue with Snapshot Types &raquo;</a>
+  </div>
+
+
+
+        
+          
+        
+
+        
+          <div class="source-hint">
+            Found an issue?
+            You can
+            <a href="https://github.com/mitsuhiko&#x2F;insta-website/edit/main/content/docs&#x2F;quickstart.md">edit this page</a>
+            on GitHub.
+          </div>
+        
+      </div>
+    </main>
+
+    
+<footer>
+  <span>
+    Created by <a href="https://lucumr.pocoo.org/">Armin Ronacher</a>
+  </span>
+  <span><a href="https://github.com/mitsuhiko/insta">Github</a></span>
+  <span><a href="https://github.com/mitsuhiko/insta/issues">Issues</a></span>
+  <span><a href="https://docs.rs/insta">API Documentation</a></span>
+  <span><a href="https://crates.io/crates/io">Crate</a></span>
+</footer>
+
+    <script>
+      function highlightNav(heading) {
+        let pathname = location.pathname;
+        document.querySelectorAll(".toc a").forEach((item) => {
+          item.classList.remove("active");
+        });
+        document
+          .querySelector(".toc a[href$='" + pathname + "#" + heading + "']")
+          .classList.add("active");
+      }
+
+      let currentHeading = "";
+      window.onscroll = function () {
+        let h = document.querySelectorAll("h1,h2,h3,h4,h5,h6");
+        let elementArr = [];
+
+        h.forEach((item) => {
+          if (item.id !== "") {
+            elementArr[item.id] = item.getBoundingClientRect().top;
+          }
+        });
+        elementArr.sort();
+        for (let key in elementArr) {
+          if (!elementArr.hasOwnProperty(key)) {
+            continue;
+          }
+          if (elementArr[key] > 0 && elementArr[key] < 300) {
+            if (currentHeading !== key) {
+              highlightNav(key);
+              currentHeading = key;
+            }
+            break;
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
